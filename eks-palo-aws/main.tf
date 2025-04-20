@@ -6,5 +6,6 @@ module "vpc" {
 
 module "vm" {
   source         = "./modules/vm"
+  subnet_id      = module.vpc.subnet_id
  
 }
